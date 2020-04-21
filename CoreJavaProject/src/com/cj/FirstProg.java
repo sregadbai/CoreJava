@@ -6,24 +6,26 @@ class Airthematic {
 	
 	int i;
 	int j;
+	int k;
 	String action;
 	
 	public void add() {
-		int k = i+j;
+		k = i+j;
 		System.out.println("Sum is: "+k);
 	}
 	public void sub() {
-		int k = i-j;
+		k = i-j;
 		System.out.println("Diff is: "+k);
 	}
 	public void mul() {
-		int k = i*j;
+		k = i*j;
 		System.out.println("Mul is: "+k);
 	}
 	public void div() {
-		int k = i/j;
+		k = i/j;
 		System.out.println("div is: "+k);
 	}
+
 }
 
 public class FirstProg {
@@ -32,11 +34,11 @@ public class FirstProg {
 	{
 		Airthematic air = new Airthematic();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a number : ");
+		System.out.print("Enter a number: ");
 		air.i = sc.nextInt();
-		System.out.println("Enter a number");
+		System.out.print("Enter a number: ");
 		air.j = sc.nextInt();
-		System.out.println("Enter action to perform :");
+		System.out.print("Enter action to perform :");
 		air.action=sc.next();
 		sc.close();
 		
@@ -50,6 +52,18 @@ public class FirstProg {
 			air.div();
 		}else {
 			System.out.println("This is not a valid operation...");
+		}
+		int num1 = air.i;
+		int num2 = air.j;
+		if (num1 % 2 == 0) {
+			System.out.println(num1+" is even number");
+		}else {
+			System.out.println(num1+" is odd number");
+		}
+		if (num2 % 2 == 0) {
+			System.out.println(num2+" is even number");
+		}else {
+			System.out.println(num2+" is odd number");
 		}
 	}
 		
